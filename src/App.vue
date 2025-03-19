@@ -42,7 +42,7 @@
 
 <script>
     import axios from 'axios';
-    const apiHost = 'http://localhost:5051'
+    const apiHost = 'http://13.210.14.154:3000'
     export default {
         name: 'App',
         data() {
