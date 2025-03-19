@@ -128,7 +128,7 @@
                     operate: "remove"
                 };
                 try {
-                    const response = await axios.post(`http://localhost:5051/Weather/RecordWatering`, requestBody)
+                    const response = await axios.post(`${apiHost}/Weather/RecordWatering`, requestBody)
                     if (response.status === 200) {
                         const selectedWeather = this.weather.find((day) => day.date === this.selectedDate);
                         if (selectedWeather) {
